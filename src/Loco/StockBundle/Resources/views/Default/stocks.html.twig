@@ -6,10 +6,10 @@
 
 <h1>List stocks</h1>
 
-<p>Ah, I see you've got:</p>
+<p>Last prices:</p>
 <ul>
 {% for stock in stocks %}
-  <li>{{ stock.ticker }}</li>
+  <li>{{ stock.ticker }} - ${{ stock.price }}</li>
 {% endfor %}
 </ul>
 
