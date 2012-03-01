@@ -1,0 +1,13 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block content_header %}
+<ul id="menu">
+  {% block content_header_more %}
+    <li><a href="{{ path('loco_stock_default_index',
+      {'name': 'Seattle PHP Meetup Group', 'article': 'shoes'}) }}">Hello world</a></li>
+    <li><a href="{{ path('loco_stock_default_stocks') }}">List stocks</a></li>
+  {% endblock %}
+</ul>
+
+<div style="clear: both"></div>
+{% endblock %}

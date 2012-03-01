@@ -1,6 +1,16 @@
-Ah, I see you've got:
+{% extends "LocoStockBundle::layout.html.twig" %}
+
+{% block title %}List stocks{% endblock %}
+
+{% block content %}
+
+<h1>List stocks</h1>
+
+<p>Ah, I see you've got:</p>
 <ul>
 {% for stock in stocks %}
   <li>{{ stock.ticker }}</li>
 {% endfor %}
 </ul>
+
+{% endblock %}

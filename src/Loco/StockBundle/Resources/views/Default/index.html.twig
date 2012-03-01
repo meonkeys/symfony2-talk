@@ -1,1 +1,10 @@
-Hello {{ name }}! Hey, nice {{ article }}.
+{% extends "LocoStockBundle::layout.html.twig" %}
+
+{% block title %}New Hello World{% endblock %}
+
+{% block content %}
+
+<h1>Hello {{ name }}!</h1>
+<h2>Hey, nice {{ article }}.</h2>
+
+{% endblock %}
