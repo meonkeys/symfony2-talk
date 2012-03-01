@@ -1,0 +1,4 @@
+services:
+  stock:
+    class: "Loco\StockBundle\Service\StockService"
+    arguments: []
